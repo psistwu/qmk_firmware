@@ -47,7 +47,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * | Shift|   Z  |   X  |   C  |   V  |   B  |   N  |   M  |   ,  |   .  |   /  |Shift |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * | Lower| GUI  | Alt  |   =  | Bksp |  Esc |Enter |Space |   -  | Alt  | GUI  |Raise |
+ * | Esc  | GUI  | Alt  |   =  | Lower| Bksp |Space |Raise |   -  | Alt  | GUI  |Enter |
  * `-----------------------------------------------------------------------------------'
  */
 [_QWERTY] = LAYOUT_preonic_grid( \
@@ -55,7 +55,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_QUOT, \
   KC_LCTL, KC_A,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_RCTL, \
   KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT, \
-  LOWER,   KC_LGUI, KC_LALT, KC_EQL,  KC_BSPC, KC_ESC,  KC_ENT,  KC_SPC,  KC_MINS, KC_RALT, KC_RGUI, RAISE    \
+  KC_ESC,  KC_LGUI, KC_LALT, KC_EQL,  LOWER,   KC_BSPC, KC_SPC,  RAISE,   KC_MINS, KC_RALT, KC_RGUI, KC_ENT   \
 ),
 
 /* Dvorak
@@ -68,7 +68,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * | Shift|   ;  |   Q  |   J  |   K  |   X  |   B  |   M  |   W  |   V  |   Z  |Shift |
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * | Lower| GUI  | Alt  |   \  | Bksp | Esc  |Enter |Space |   /  | Alt  | GUI  |Raise |
+ * | Esc  | GUI  | Alt  |   \  | Lower| Bksp |Space |Raise |   /  | Alt  | GUI  |Enter |
  * `-----------------------------------------------------------------------------------'
  */
 [_DVORAK] = LAYOUT_preonic_grid( \
@@ -76,7 +76,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_TAB,  KC_QUOT, KC_COMM, KC_DOT,  KC_P,    KC_Y,    KC_F,    KC_G,    KC_C,    KC_R,    KC_L,    KC_MINS, \
   KC_LCTL, KC_A,    KC_O,    KC_E,    KC_U,    KC_I,    KC_D,    KC_H,    KC_T,    KC_N,    KC_S,    KC_RCTL, \
   KC_LSFT, KC_SCLN, KC_Q,    KC_J,    KC_K,    KC_X,    KC_B,    KC_M,    KC_W,    KC_V,    KC_Z,    KC_RSFT, \
-  LOWER,   KC_LGUI, KC_LALT, KC_BSLS, KC_BSPC, KC_ESC,  KC_ENT,  KC_SPC,  KC_SLSH, KC_RALT, KC_RGUI, RAISE    \
+  KC_ESC,  KC_LGUI, KC_LALT, KC_BSLS, LOWER,   KC_BSPC, KC_SPC,  RAISE,   KC_SLSH, KC_RALT, KC_RGUI, KC_ENT   \
 ),
 
 /* Dvorak left hand
@@ -95,7 +95,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_DVL] = LAYOUT_preonic_grid( \
   KC_LBRC, KC_RBRC, KC_SLSH, KC_P,    KC_F,    KC_M,    KC_L,    KC_J,    KC_4,    KC_3,    KC_2,    KC_1,    \
   KC_SCLN, KC_Q,    KC_B,    KC_Y,    KC_U,    KC_R,    KC_S,    KC_O,    KC_DOT,  KC_6,    KC_5,    KC_EQL,  \
-  KC_MINS, KC_K,    KC_C,    KC_D,    KC_T,    KC_H,    KC_E,    KC_A,    KC_Z,    KC_8,    KC_7,    KC_ENT,  \
+  KC_MINS, KC_K,    KC_C,    KC_D,    KC_T,    KC_H,    KC_E,    KC_A,    KC_Z,    KC_8,    KC_7,    KC_TAB,  \
   KC_QUOT, KC_X,    KC_G,    KC_V,    KC_W,    KC_N,    KC_I,    KC_COMM, KC_0,    KC_9,    KC_BSLS, KC_GRV,  \
   KC_ESC,  KC_LALT, KC_LGUI, KC_LCTL, KC_LSFT, LOWER,   KC_BSPC, KC_SPC,  KC_ENT,  KC_RCTL, KC_RSFT, RAISE    \
 ),
